@@ -6,7 +6,7 @@ compiler:
     remappings:
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.4.0'
       - '@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1'
-dontenv: .env
+dotenv: .env
 wallets:
   from_key: ${PRIVATE_KEY}
 networks:
