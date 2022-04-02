@@ -10,6 +10,12 @@ from web3 import Web3
 
 LOCAL_BLOCKCHAIN_ENVIRONMENTS = ["hardhat", "development", "ganache", "mainnet-fork"]
 OPENSEA_URI = "https://testnets.opensea.io/assets/{}/{}"
+BREED_MAPPING = {0: "PUG", 1: "SHIBA_INU", 2: "ST_BERNARD"}
+
+
+def get_breed(breed_number):
+    return BREED_MAPPING[breed_number]
+
 
 contract_to_mock = {
     "vrf_coordinator": VRFCoordinatorMock,
